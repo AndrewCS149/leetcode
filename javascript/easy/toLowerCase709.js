@@ -1,8 +1,9 @@
 /*
 709. To Lower Case 
+Difficulty: Easy
+
 Implement function ToLowerCase() that has a string parameter str, and 
 returns the same string in lowercase.
-Difficulty - Easy
 */
 
 var toLowerCase = function (str) {
