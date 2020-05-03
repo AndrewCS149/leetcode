@@ -14,7 +14,7 @@ var smallerNumbersThanCurrent = function (nums) {
     var smallerNums = 0;
 
     for (var k = 0; k < nums.length; k++) {
-      if (nums[i] < nums[k]) {
+      if (nums[i] > nums[k]) {
         smallerNums++;
       }
     }
