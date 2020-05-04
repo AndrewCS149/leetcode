@@ -12,3 +12,19 @@ Given two arrays of integers nums and index. Your task is to create target array
 
 It is guaranteed that the insertion operations will be valid.
 */
+
+var createTargetArray = function (nums, index) {
+
+    var targetArr = [];
+    for (var i = 0; i < nums.length; i++) {
+        targetArr.splice(index[i], 0, nums[i]);
+    }
+
+
+    return targetArr;
+};
+
+var numArr = [0, 1, 2, 3, 4]
+var idxArr = [0, 1, 2, 2, 1]
+
+console.log(createTargetArray(numArr, idxArr));
