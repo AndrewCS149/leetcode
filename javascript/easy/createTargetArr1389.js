@@ -11,6 +11,7 @@ Given two arrays of integers nums and index. Your task is to create target array
     Return the target array.
 
 It is guaranteed that the insertion operations will be valid.
+
 */
 
 var createTargetArray = function (nums, index) {
