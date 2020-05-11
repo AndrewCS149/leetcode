@@ -32,5 +32,5 @@ var testArr = [5, 2, 6, 1];
 console.log(countSmaller(testArr));
 
 
-
+// UNFINISHED /////////////////////////////////////////////////////
 // leetcode did not accept this submission. The built took too long. 
