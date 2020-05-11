@@ -39,7 +39,8 @@ var maximum69Number = function (num) {
       }
       array[i] = 6;
     }
-    console.log(max);
   }
+  return max;
 };
-maximum69Number(9669);
+
+console.log(maximum69Number(9999));

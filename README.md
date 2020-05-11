@@ -22,6 +22,7 @@ File structure:
   - 1281. Subtract the Product and Sum of Digits of an Integer
   - 1365. How Many Numbers Are Smaller Than the Current Number
   - 709. To Lower Case
+  - 1323. Maximum 69 Number
 
 ## Unfinished Problems
 
