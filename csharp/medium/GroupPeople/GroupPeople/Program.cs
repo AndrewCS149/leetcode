@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace GroupPeople
 {
@@ -23,7 +25,11 @@ namespace GroupPeople
 
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+        }
+
+        private IList<IList<int>> ReturnGroups(int[] groupSizes)
+        {
+            IList<IList<int>> groups = new IList<IList<int>>();
         }
     }
 }
