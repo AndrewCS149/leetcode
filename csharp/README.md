@@ -9,7 +9,7 @@
 
 ### Medium
 
-- [AddTwoNumbers](medium/AddTwoNumbers/AddTwoNumbers) - Unfinished
+- [AddTwoNumbers](medium/AddTwoNumbers/AddTwoNumbers)
 - [GroupPeople](medium/GroupPeople/GroupPeople) - Unfinished
 - [FormGroups](medium/FormGroups/FormGroups)
 

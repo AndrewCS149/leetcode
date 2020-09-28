@@ -2,11 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\csharp",
-    "\\csharp\\easy",
-    "\\csharp\\easy\\TwoSum",
     "\\csharp\\medium",
+    "\\csharp\\medium\\AddTwoNumbers",
+    "\\csharp\\medium\\GroupPeople",
+    "\\csharp\\medium\\GroupPeople\\GroupPeople",
     "\\javascript"
   ],
-  "SelectedNode": "\\csharp\\README.md",
+  "SelectedNode": "\\csharp\\medium\\AddTwoNumbers\\AddTwoNumbers.sln",
   "PreviewInSolutionExplorer": false
 }

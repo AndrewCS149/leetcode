@@ -13,70 +13,127 @@ namespace AddTwoNumbers
     Output: 7 -> 0 -> 8
     */
 
-    internal class Program
+    public class Program
     {
-        public class ListNode
+        public static void Main(string[] args)
         {
-            public int val;
-            public ListNode next;
+            // TEST 1
+            LinkedList l1 = new LinkedList();
+            l1.AddFirst(3);
+            l1.AddFirst(4);
+            l1.AddFirst(2);
+            l1.Print();
 
-            public ListNode(int val = 0, ListNode next = null)
-            {
-                this.val = val;
-                this.next = next;
-            }
+            Console.WriteLine();
+
+            LinkedList l2 = new LinkedList();
+            l2.AddFirst(4);
+            l2.AddFirst(6);
+            l2.AddFirst(5);
+            l2.Print();
+
+            Console.WriteLine();
+
+            LinkedList l3 = AddTwoNumbers(l1, l2);
+            l3.Print();
+
+            Console.WriteLine();
+
+            // TEST 2
+
+            LinkedList l4 = new LinkedList();
+            l4.AddFirst(3);
+            l4.AddFirst(2);
+            l4.AddFirst(1);
+            l4.Print();
+
+            Console.WriteLine();
+
+            LinkedList l5 = new LinkedList();
+            l5.AddFirst(6);
+            l5.AddFirst(5);
+            l5.AddFirst(4);
+            l5.Print();
+
+            Console.WriteLine();
+
+            LinkedList l6 = AddTwoNumbers(l4, l5);
+            l6.Print();
         }
 
-        private static void Main(string[] args)
+        public static LinkedList AddTwoNumbers(LinkedList l1, LinkedList l2)
         {
-            ListNode l1 = new ListNode();
-            ListNode l1child = new ListNode();
-            l1.val = 5;
-            l1child.val = 8;
-            l1.next = l1child;
+            Node l1current = l1.Head;
+            Node l2current = l2.Head;
+            LinkedList newList = new LinkedList();
+            string l1sum = "";
+            string l2sum = "";
 
-            ListNode l2 = new ListNode();
-            ListNode l2child = new ListNode();
-            l2.val = 7;
-            l2child.val = 6;
-            l2.next = l2child;
+            while (l1current != null)
+            {
+                l1sum += l1current.Value;
+                l2sum += l2current.Value;
 
-            AddTwoNumbers(l1, l2);
+                l1current = l1current.Next;
+                l2current = l2current.Next;
+            }
+
+            int total = Int32.Parse(l1sum) + Int32.Parse(l2sum);
+            char[] arr = total.ToString().ToCharArray();
+
+            foreach (char digit in arr)
+            {
+                newList.AddFirst(Int32.Parse(digit.ToString()));
+            }
+
+            return newList;
+        }
+    }
+
+    public class Node
+    {
+        public int Value { get; set; }
+        public Node Next { get; set; }
+
+        public Node(int value)
+        {
+            Value = value;
+        }
+    }
+
+    public class LinkedList
+    {
+        public Node Head { get; set; }
+        public int Length { get; set; }
+
+        public LinkedList()
+        {
+            Length = 0;
         }
 
-        public static ListNode AddTwoNumbers(ListNode l1, ListNode l2)
+        public void AddFirst(int value)
         {
-            string str = "";
-            string str2 = "";
-            while (l1 != null)
+            Node newNode = new Node(value);
+
+            if (Length == 0)
+                Head = newNode;
+            else
             {
-                str += l1.val;
-                str2 += l2.val;
-                l1 = l1.next;
-                l2 = l2.next;
+                newNode.Next = Head;
+                Head = newNode;
             }
 
-            int sum1 = Int32.Parse(str);
-            int sum2 = Int32.Parse(str2);
-            int totalSum = sum1 + sum2;
-            string[] sumArr = totalSum.ToString().Split("");
-            Array.Reverse(sumArr);
+            Length++;
+        }
 
-            foreach (var item in sumArr)
+        public void Print()
+        {
+            Node current = Head;
+            while (current != null)
             {
-                Console.WriteLine(item);
+                Console.Write(current.Value + " - ");
+                current = current.Next;
             }
-
-            ListNode head = new ListNode();
-            head.val = Int32.Parse(sumArr[0]);
-            ListNode current = head;
-            for (int i = 1; i < sumArr.Length; i++)
-            {
-                current = current.next;
-                current.val = Int32.Parse(sumArr[i]);
-            }
-
-            return current;
         }
     }
 }
