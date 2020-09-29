@@ -4,6 +4,7 @@
 
 - [TwoSum](easy/TwoSum/TwoSum)
 - [RunningSum](easy/RunningSum/RunningSum)
+- [RangeSumBST](easy/RangeSumBST/RangeSumBST)
 
 ---
 

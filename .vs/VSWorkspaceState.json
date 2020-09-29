@@ -4,10 +4,11 @@
     "\\csharp",
     "\\csharp\\medium",
     "\\csharp\\medium\\AddTwoNumbers",
+    "\\csharp\\medium\\AddTwoNumbers\\AddTwoNumbers",
     "\\csharp\\medium\\GroupPeople",
     "\\csharp\\medium\\GroupPeople\\GroupPeople",
     "\\javascript"
   ],
-  "SelectedNode": "\\csharp\\medium\\AddTwoNumbers\\AddTwoNumbers.sln",
+  "SelectedNode": "\\csharp\\README.md",
   "PreviewInSolutionExplorer": false
 }
