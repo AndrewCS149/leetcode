@@ -6,6 +6,7 @@
 - [RunningSum](easy/RunningSum/RunningSum)
 - [RangeSumBST](easy/RangeSumBST/RangeSumBST)
 - [Number of students doing homework at a given time](easy/StudentsDoingHomework)
+- [Search Binary Search Tree](easy/SearchBST/SearchBST)
 
 ---
 
