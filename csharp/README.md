@@ -7,6 +7,7 @@
 - [RangeSumBST](easy/RangeSumBST/RangeSumBST)
 - [Number of students doing homework at a given time](easy/StudentsDoingHomework)
 - [Search Binary Search Tree](easy/SearchBST/SearchBST)
+- [Count negative numbers in a matrix](easy/CountNegNumbers/CountNegNumbers)
 
 ---
 
