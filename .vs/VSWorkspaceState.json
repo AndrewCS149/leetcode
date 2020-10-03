@@ -3,10 +3,11 @@
     "",
     "\\csharp",
     "\\csharp\\easy",
-    "\\csharp\\easy\\SearchBST",
-    "\\csharp\\easy\\SearchBST\\SearchBST",
+    "\\csharp\\easy\\CountNegNumbers",
+    "\\csharp\\easy\\CountNegNumbers\\CountNegNumbersTests",
+    "\\csharp\\easy\\IncreasingOrderBST",
     "\\javascript"
   ],
-  "SelectedNode": "\\csharp\\easy\\SearchBST\\SearchBST\\Program.cs",
+  "SelectedNode": "\\csharp\\easy\\IncreasingOrderBST\\IncreasingOrderBST.sln",
   "PreviewInSolutionExplorer": false
 }
